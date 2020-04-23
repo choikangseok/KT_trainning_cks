@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>KT CKS의 홈페이지 입니다. </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+
+	<style>
+		/* * {
+			border-color: red;
+			border-width: 3px;
+			border-style: solid;
+		} */
+
+		li {
+			color: white;
+			font-size: 40px;
+			font-family: 휴먼매직체;
+		}
+
+		h1 {
+			border-bottom: 30px solid wheat;
+			padding: 50px;
+			font-size: 40px;
+			/* border-color: wheat;
+			border-width:4px;
+			border-style: solid;
+			color: red;
+			font-size: 30px;
+			font-family: 휴먼매직체; */
+		}
+
+		/* ul {
+			border: 1px dotted wheat;
+			border-right: 5px dotted white;
+		}  */
+
+		h5 {
+			color: snow;
+			font-size: 30px;
+			font-family: 휴먼매직체;
+		}
+
+		body {
+			color: snow;
+			background-image: url('apple_pc.jpg');
+			background-size: contain;
+		}
+
+		a:link {
+			color: snow;
+			background-color: transparent;
+			text-decoration: none;
+		}
+
+		a:hover {
+			background: grey;
+		}
+
+		a:visited {
+			color: rgb(247, 181, 181);
+			background-color: rgba(100, 100, 100, 0.527);
+			text-decoration: none;
+		}
+
+		/* div {
+			border: 5px solid red;
+		} */
+
+		#container {
+			display: grid;
+			/* border: 1px dotted green; */
+			grid-template-columns: 200px 1fr 100px;
+		}
+
+		#container2 {
+			/* border: 5px solid red; */
+			/* border: 1px dotted yellow; */
+			grid-template-columns: 200px 1f 100px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="page-lead" style="background-image:src('apple_pc.jpg')">
+
+		<!-- 네비게이션 바 -->
+
+		<nav role="navigation" id="js-menu" class="sliding-menu-content">
+			<h5>
+				<p style="font-size : 50px; color: snow;">KT CKS 사원은 뭘 좋아할까</p>
+			</h5>
+			<ul class="menu-item">
+				<li>
+					<a href="1.html">
+						<img src="https://source.unsplash.com/1600x900/?finance" alt="teaser" class="teaser">
+						<div class="title">주식</div>
+					</a>
+				</li>
+				<li>
+					<a href="2.html">
+						<img src="https://source.unsplash.com/1600x900/?travel" alt="teaser" class="teaser">
+						<div class="title">여행</div>
+					</a>
+				</li>
+				<li>
+					<a href="3.html">
+						<img src="https://source.unsplash.com/1600x900/?computer" alt="teaser" class="teaser">
+						<div class="title">컴퓨터</div>
+					</a>
+				</li>
+				<li>
+					<a href="4.html">
+						<img src="https://source.unsplash.com/1600x900/?korea?flag" alt="teaser" class="teaser">
+						<div class="title">한국</div>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<button type="button" id="js-menu-trigger" class="sliding-menu-button lines-button x2" role="button"
+			aria-label="Toggle Navigation">
+			<span class="nav-lines"></span>
+			<br>
+			<br>
+			<p style="font-size : 30px; color: snow;"  ;>Click!</p>
+		</button>
+		<div id="js-menu-screen" class="menu-screen"></div>
+
+
+		<!-- <div id="page-wrapper">
+		<div id="main" role="main">
+			<div class="wrap">
+
+				<div class="page-title">
+					<h1></h1>
+
+				</div>
+				<div class="archive-wrap">
+					<div class="page-content">
+
+
+					</div>
+				</div class="archive-wrap">
+			</div>
+		</div>
+		<div id="js-menu-screen" class="menu-screen"></div>
+	</div> -->
+	<div>
+		<p align="left"><a href="https://github.com/choikangseok/KT_trainning/tree/master/web" class="btn-inverse" style="background-color: rgb(143, 245, 0);">View on GitHub</a></p>
+	</div>
+		<div>
+			<h1 class="animated infinite bounce delay-100s" align="left"><a href="index.html">CKS의 뻬이보릿 </a></h1>
+
+		</div>
+		
+		<div id="container">
+
+			<div>
+				<ul>
+					<li><a href='1.html'>주식</a></li>
+					<li><a href='2.html'>여행</a></li>
+					<li><a href='3.html'>컴퓨터</a></li>
+					<li><a href='4.html'>한국</a></li>
+
+				</ul>
+			</div>
+			<div>
+				<div>
+					<h2>Welcome to CKS's SNS</h2>
+				</div>
+				<div id="container2">
+					<div>
+						<a href="https://www.instagram.com/choikangseok/"><img src="instagram.jpg"
+								style="max-width: 200px; height: auto;" /></a>
+					</div>
+
+					<div>
+						<a href="https://www.facebook.com/ktos5427"><img src="facebook.jpg"
+								style="max-width: 150px; height: auto;" /></a>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- <img src="https://source.unsplash.com/1600x900/?apple, computer" style="max-width: 40%; height: auto;" /> -->
+
+		</div>
+	</div>
+	<script src="/js/vendor/jquery-1.9.1.min.js"></script>
+	<script src="/js/main.js"></script>
+	<footer>
+
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <meta charset="utf-8">
+        <title>WEB-Python</title>
+        <style>
+            @-webkit-keyframes sheen {
+                0% {
+                    -webkit-transform: skewY(-45deg) translateX(0);
+                            transform: skewY(-45deg) translateX(0);
+                }
+                100% {
+                    -webkit-transform: skewY(-45deg) translateX(12.5em);
+                            transform: skewY(-45deg) translateX(12.5em);
+                }
+            }
+            @keyframes sheen {
+                0% {
+                    -webkit-transform: skewY(-45deg) translateX(0);
+                            transform: skewY(-45deg) translateX(0);
+                }
+                100% {
+                    -webkit-transform: skewY(-45deg) translateX(12.5em);
+                            transform: skewY(-45deg) translateX(12.5em);
+                }
+            }
+            .btn_group {
+                display: block;
+                position: absolute;
+                top: 55%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+            }
+
+            .button1 {
+                padding: 60px 80px;
+                text-align: center;
+                text-decoration: none;
+                background-color:white;
+                border: 3px solid azure;
+                color:lightseagreen;
+                /* color: #2194E0; */
+                /* border: 2px solid #2194E0; */
+                font-size: 22px;
+                display: inline-block;
+                border-radius: 30px;
+                -webkit-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+                position: relative;
+                overflow: hidden;
+            }
+            .button1:before {
+                content: "";
+                background-color: rgba(255, 255, 255, 0.5);
+                height: 100%;
+                width: 3em;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -4.5em;
+                -webkit-transform: skewX(-45deg) translateX(0);
+                        transform: skewX(-45deg) translateX(0);
+                -webkit-transition: none;
+                transition: none;
+            }
+            .button1:hover {
+                border-bottom: 4px solid lightseagreen;
+                color:white;
+                background-color: lightseagreen;
+            }
+            .button1:hover:before {
+                -webkit-transform: skewX(-45deg) translateX(13.5em);
+                        transform: skewX(-45deg) translateX(13.5em);
+                -webkit-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+            }
+            /* /////////////////////// */
+            .button2 {
+                padding: 60px 50px;
+                text-align: center;
+                text-decoration: none;
+                background-color:white;
+                border: 3px solid azure;
+                color:lightseagreen;
+                /* color: #2194E0; */
+                /* border: 2px solid #2194E0; */
+                font-size: 22px;
+                display: inline-block;
+                border-radius: 30px;
+                -webkit-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+                position: relative;
+                overflow: hidden;
+            }
+            .button2:before {
+                content: "";
+                background-color: rgba(255, 255, 255, 0.5);
+                height: 100%;
+                width: 3em;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -4.5em;
+                -webkit-transform: skewX(-45deg) translateX(0);
+                        transform: skewX(-45deg) translateX(0);
+                -webkit-transition: none;
+                transition: none;
+            }
+            .button2:hover {
+                border-bottom: 4px solid lightseagreen;
+                color:white;
+                background-color: lightseagreen;
+            }
+            .button2:hover:before {
+                -webkit-transform: skewX(-45deg) translateX(13.5em);
+                        transform: skewX(-45deg) translateX(13.5em);
+                -webkit-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+            }
+            /* //////////////////////// */
+            .button3 {
+                padding: 60px 55px;
+                text-align: center;
+                text-decoration: none;
+                background-color:white;
+                border: 3px solid azure;
+                color:lightseagreen;
+                /* color: #2194E0; */
+                /* border: 2px solid #2194E0; */
+                font-size: 22px;
+                display: inline-block;
+                border-radius: 30px;
+                -webkit-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+                position: relative;
+                overflow: hidden;
+            }
+            .button3:before {
+                content: "";
+                background-color: rgba(255, 255, 255, 0.5);
+                height: 100%;
+                width: 3em;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -4.5em;
+                -webkit-transform: skewX(-45deg) translateX(0);
+                        transform: skewX(-45deg) translateX(0);
+                -webkit-transition: none;
+                transition: none;
+            }
+            .button3:hover {
+                border-bottom: 4px solid lightseagreen;
+                color:white;
+                background-color: lightseagreen;
+            }
+            .button3:hover:before {
+                -webkit-transform: skewX(-45deg) translateX(13.5em);
+                        transform: skewX(-45deg) translateX(13.5em);
+                -webkit-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+            }
+            /* /////////////////////////////////// */
+            body {
+                background-color:seashell;
+            }
+            ul li {list-style-type: none; float:left; margin-left:20px;}
+
+            #h1{
+                color:lightseagreen;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size:45px;
+            }
+            #h2{
+                color:gray;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <br><br>
+        <br><br>
+        <br><br>
+        <center><h1 id="h1" class="animated infinite bounce delay-0s">Competitor report</h1></center>
+        <center><h2 id="h2">"Analyzing the competitiveness of three telecommunication companies."</h2></center>
+
+        <center><div class="btn_group">
+            <a href='kt.html' class="button1">KT is</a>
+            <a href='Comparison.html' class="button2">Comparison</a>
+            <a href='Advertising.html' class="button3">Advertising</a>
+        </div></center>
+    </body>
+</html>

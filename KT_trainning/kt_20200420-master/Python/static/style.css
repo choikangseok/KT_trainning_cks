@@ -1,0 +1,52 @@
+li {
+    color: blue;
+    font-size: 20px;
+    font-family: 휴먼매직체;
+}
+
+h1 {
+    border-bottom: 30px solid black;
+    padding: 50px;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+h5 {
+    color: black;
+    font-size: 30px;
+    font-family: 휴먼매직체;
+}
+
+body {
+    color: black;
+    background-image: url('apple_pc.jpg');
+    background-size: contain;
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    background: grey;
+}
+
+a:visited {
+    color: black;
+    background-color: rgba(100, 100, 100, 0.527);
+    text-decoration: none;
+}
+
+#container {
+    display: grid;
+    /* border: 1px dotted green; */
+    grid-template-columns: 200px 1fr 100px;
+}
+
+#container2 {
+    /* border: 5px solid red; */
+    /* border: 1px dotted yellow; */
+    grid-template-columns: 200px 1f 100px;
+}

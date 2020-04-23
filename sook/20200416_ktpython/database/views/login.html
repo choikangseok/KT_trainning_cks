@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB - Login</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1><a href="/">WEB</a></h1>
+    <ol>
+{{ menu }}
+    </ol>
+    <h2>Login</h2>
+    <form action="/login" method="post">
+        <p><input type="text" name="id" placeholder="userid"></p>
+        <p><input type="password" name="pw" placeholder="password"></p>
+        <button type="submit">로그인</button>
+    </form>
+    {{ message }}
+</body>
+</html>

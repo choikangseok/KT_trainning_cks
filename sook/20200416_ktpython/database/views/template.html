@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB - {{ title }}</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1><a href="/">WEB</a></h1>
+    <ol>
+{{ menu | safe }}
+    </ol>
+    <div>
+        <a href="/login">login</a>
+        <a href="/create">create</a>
+        <a href="/delete/{0}">delete</a>
+    </div>
+    
+    <h2>{{ title }}</h2>
+    {{ content }}
+</body>
+</html>

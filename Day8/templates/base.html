@@ -1,0 +1,7 @@
+<h1>{{ title }}</h1>
+<form action='/{{ site }}' method='post'>
+    <input type='text' name='numbers'
+           placeholder='{{ placehoder }}'>
+    <button type='submit'>제출</button>
+</form>
+<div>{{ result|safe }}</div>

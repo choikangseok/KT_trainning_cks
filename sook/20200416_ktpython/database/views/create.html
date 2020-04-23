@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB - Create</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1><a href="/">WEB</a></h1>
+    <ol>
+{{ menu }}
+    </ol>
+    <h2>Create</h2>
+    <form action="/create" method="post">
+        <p><input type="text" name="title" placeholder="title"></p>
+        <p><textarea name="desc" placeholder="description"></textarea></p>
+        <button type="submit">제출</button>
+    </form>
+    {{ message }}
+</body>
+</html>
